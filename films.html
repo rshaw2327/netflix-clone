@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Home</title>
+    <link rel="stylesheet" href="./style-Rich.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- modal container -->
+    <div class="modal-cont">
+        <div class="modal">
+            <img src="https://ap2-prod-images.disco-api.com/2022/05/20/0761d7a2-323f-4108-9365-a35b2f3e2104.jpeg?bf=0&f=jpg&p=true&q=85&w=600"
+                width="100%" alt="">
+            <h1>Little Singham</h1>
+            <p>A nine-year-old boy battles evil villains that are out to create chaos.</p>
+            <button class="x-mark">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+    </div>
+    <main>
+        <header>
+            <nav class="navBar">
+                <a href="./"><img class="logo"
+                        src="https://images.ctfassets.net/y2ske730sjqp/821Wg4N9hJD8vs5FBcCGg/9eaf66123397cc61be14e40174123c40/Vector__3_.svg?"
+                        alt=""></a>
+
+                <div class="navBtns">
+                    <ul>
+
+                        <a href="./index-Rich.html">
+                            <li>Home</li>
+                        </a>
+                        <a href="./series.html">
+                            <li>Serires</li>
+                        </a>
+                        <a href="./films.html">
+                            <li>Films</li>
+                        </a>
+                       
+                        <a href="">
+                            <li>My list</li>
+                        </a>
+                        <a href="">
+                            <li>Browse by language</li>
+                        </a>
+
+
+                    </ul>
+                </div>
+                <div class="search-bar">
+                    <div class="search-bar-container active">
+                        <i class="fa-solid fa-magnifying-glass magnifier"></i>
+                        <input type="text" class="input" placeholder="titles people genres" />
+                        <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-25-512.png"
+                            alt="" class="mic">
+                    </div>
+                    <i class="fa-solid fa-bell"></i>
+                    <i class="fa-solid fa-user"></i>
+
+                </div>
+            </nav>
+        </header>
+        <div class="heroSection">
+            <video id="filmVideo" autoplay src="./videos/films page video.mp4"></video>
+            <div class="filmInfo">
+                <h1>Perfect date</h1>
+                <h3>No.1 in Films Today</h3>
+                <p>To save up for college, Brooks Rattigan (Noah Centineo) <br> creates an app where anyone can pay him
+                    to play <br> the perfect stand-in boyfriend for any occasion. </p>
+                <div class="btn">
+                    <button onclick="document.getElementById('filmVideo').play()" class="playBtn"><i
+                            class="fa-solid fa-play"></i> Play</button>
+                    <button class="infoBtn"><i class="fa-solid fa-info"></i>More Info</button>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Slider main container -->
+        <div class="container-fluid">
+            <div class="container">
+
+
+                <div class="swiper swiper1">
+                    <h1>
+                        <div>Kids Section</div>
+        
+                        <div class="exp-all"> Explore all
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </h1>
+                  
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                
+                    </div>
+
+
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons  -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+
+                </div>
+
+
+
+
+
+                <div class="swiper swiper2 ">
+                    <h1>
+                        <div>Continue watching...</div>
+        
+                        <div class="exp-all"> Explore all
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </h1>
+                    <div class="swiper-wrapper">
+                    </div>
+
+
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+
+
+
+                </div>
+
+                <div class="swiper swiper3 ">
+                    <h1>
+                        <div>Popular in UK</div>
+        
+                        <div class="exp-all"> Explore all
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </h1>
+                    <div class="swiper-wrapper">
+
+                    </div>
+
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <script src="https://kit.fontawesome.com/2a218ecf02.js" crossorigin="anonymous"></script>
+
+
+    <script src="./main-Rich.js"></script>
+</body>
+
+</html>

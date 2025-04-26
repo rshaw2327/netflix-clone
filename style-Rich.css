@@ -1,0 +1,454 @@
+body {
+  box-sizing: border-box;
+  background-color: black;
+  margin: 0;
+}
+/* Nav bar */
+.navBar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0px;
+}
+
+.logo {
+  width: 120px;
+  height: 30px;
+  margin-left: 60px;
+  margin-left: 20px;
+}
+
+.navBtns ul {
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-right: 220px;
+}
+
+.navBtns ul li {
+  list-style-type: none;
+  margin-right: 40px;
+}
+
+.navBtns ul a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+}
+
+.search-bar {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  padding: 5px;
+  width: 300px;
+  border-radius: 50px;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3),
+    -6px -6px 10px rgba(255, 255, 255, 0.1);
+  margin: 10px;
+  position: relative;
+  transition-duration: 1s;
+}
+
+.magnifier {
+  width: 25px;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+}
+
+.mic {
+  width: 30px;
+  position: absolute;
+  right: 10px;
+  transition-duration: 0.5s;
+  transition-delay: 1s;
+}
+
+.input {
+  border: none;
+  margin: 10px 50px;
+  outline: none;
+  background-color: transparent;
+}
+
+.input::placeholder {
+  color: red;
+  opacity: 1; /* Firefox */
+}
+
+textarea:focus,
+input:focus {
+  color: #ff0000;
+}
+
+input,
+select,
+textarea {
+  color: #000;
+}
+
+.active.search-bar-container {
+  width: 50px;
+}
+
+.active .input {
+  width: 0;
+}
+
+.active .mic {
+  width: 0;
+}
+
+.fa-bell {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.fa-user {
+  cursor: pointer;
+}
+
+/* heros section */
+.heroSection {
+  color: white;
+  position: relative;
+  margin-bottom: 40px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.heroSection video {
+  width: 100%;
+  /* height: 100vh; */
+  filter: brightness(120%);
+  background-color: red;
+}
+
+.filmInfo {
+  position: absolute;
+  left: 50px;
+  top: 400px;
+  line-height: 20px;
+}
+
+.filmInfo h1 {
+  font-size: 80px;
+}
+
+.filmInfo h3 {
+  font-size: 50px;
+}
+
+.filmInfo p {
+  font-size: 20px;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+}
+button:hover {
+}
+
+.infoBtn {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  margin-left: 20px;
+  position: relative;
+}
+
+.video-modal {
+  position: absolute;
+  top: -400px;
+  left: 500px;
+  background-color: darkslategrey;
+  width: 400px;
+  height: 700px;
+  z-index: 1005;
+  padding: 50px;
+  border-radius: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: visible;
+  align-items: center;
+} 
+
+
+.video-modal.active {
+  display: flex;
+}
+
+.video-modal p {
+  margin: 2px;
+}
+
+.video-modal h1 {
+  margin: 2px;
+  padding: 0;
+}
+.fa-info {
+  margin-right: 6px;
+}
+h3 {
+  color: white;
+}
+/* Swiper */
+
+.container-fluid {
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+}
+.swiper {
+  position: relative;
+  width: 100%;
+  overflow: visible !important;
+}
+
+.swiper h1 {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  z-index: -2;
+  cursor: pointer;
+  color: white;
+}
+
+.exp-all {
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  margin-left: 0px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  color: #1c5ab1;
+  width: 0;
+  font-size: 20px;
+  white-space: nowrap;
+  bottom: 1%;
+}
+
+.swiper h1:hover .exp-all {
+  opacity: 1;
+  left: 18%;
+  bottom: 1%;
+  width: auto;
+  overflow: visible;
+  margin-left: 12px;
+}
+
+.swiper-slide {
+  padding: 15px;
+  position: relative;
+}
+
+.swiper1 {
+  margin-bottom: 20px;
+}
+.swiper2 {
+  margin-bottom: 20px;
+}
+.swiper3 {
+  margin-bottom: 20px;
+}
+
+.swiper-button-next {
+  color: white;
+}
+
+.swiper-button-prev {
+  color: white;
+}
+
+.swiper-slide {
+  display: flex;
+}
+
+.swiper-button-next {
+  color: white;
+}
+
+.swiper-button-prev {
+  color: white;
+}
+
+.card img {
+  width: 100%;
+  margin: 0px;
+}
+.card {
+  position: relative;
+  display: flex;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  z-index: 10 !important;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  cursor: pointer;
+  transform: scale(1);
+}
+.card:hover {
+  transform: scale(1.5);
+  z-index: 1000 !important;
+}
+
+.card .card-body {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: -125px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0.3));
+  margin: 0;
+  overflow: visible;
+  margin-bottom: 80px;
+  z-index: 1000;
+  color: white;
+  opacity: 0;
+  transition-duration: 0.3s;
+  width: 100%;
+  height: 100%;
+}
+
+.card-body p {
+  /* margin: 0; */
+  width: 60%;
+  /* font-weight: 600; */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card .card-body:hover {
+  opacity: 1;
+}
+
+.action-btns {
+  display: flex;
+  align-items: center;
+  /* margin-left:30px; */
+}
+
+.action-btns div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  aspect-ratio: 1;
+  margin-right: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #fff;
+}
+
+.action-btns div:last-child {
+  margin: 0;
+}
+
+.fa-plus,
+.fa-angle-down {
+  font-size: 20px;
+  border: 3px solid white;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.add_mylist {
+  position: absolute;
+  left: 55%;
+  bottom: 20px;
+  background-color: lightgray;
+  color: black;
+  border-radius: 20px;
+  padding: 2px;
+  font-size: 12px;
+  opacity: 0;
+}
+
+.action-btns .fa-plus:hover .add_mylist {
+  opacity: 1;
+}
+
+.modal-cont {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(0, 0, 0, 0.8);
+  z-index: 10;
+  display: none;
+  transition-duration: 0.3s;
+}
+.modal-cont.active {
+  display: flex;
+}
+
+.modal {
+  position: absolute;
+  height: 550px;
+  width: 600px;
+  top: 20%;
+  left: 30%;
+  border-radius: 20px;
+  background-color: beige;
+  padding: 20px;
+}
+
+.modal p {
+  font-size: 25px;
+}
+
+.modalBtn{
+  background-color: brown;
+  color: white;
+  font-weight: 600;
+
+}
+.x-mark {
+  position: absolute;
+  top: -2%;
+  right: -2%;
+  background-color: brown;
+  color: aliceblue;
+  font-size: 40px;
+  border-radius: 50px;
+}
+.swiper-pagination {
+  position: absolute !important;
+  top: 40px !important;
+  left: unset !important;
+  right: 18px !important;
+  display: flex;
+  width: fit-content !important;
+  height: fit-content;
+  z-index: 30 !important;
+}
+.swiper-pagination-bullet {
+  width: 18px!important;
+  height: 3px!important;
+  margin: 0 6px !important;
+  border-radius: 0px;
+  z-index: 0 !important;
+  background-color:white!important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color:pink!important
+}
